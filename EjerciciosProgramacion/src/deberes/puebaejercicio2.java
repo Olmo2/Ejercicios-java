@@ -14,9 +14,27 @@ public class puebaejercicio2 {
 		System.out.println("Valor De la Venta 1: ");
 		venta = teclado.nextFloat();
 		comision = venta*porcentaje;
+		
+		System.out.println("Comisión: " + comision);
 		sueldo += comision;
-		System.out.println(sueldo );
-
+		
+		System.out.println("Valor De la Venta 2: ");
+		venta = teclado.nextFloat();
+		comision = venta*porcentaje;
+		
+		System.out.println("Comisión: " + comision);
+		sueldo += comision;
+		
+		System.out.println("Valor De la Venta 3: ");
+		venta = teclado.nextFloat();
+		comision = venta*porcentaje;
+		
+		System.out.println("Comisión: " + comision);
+		sueldo += comision;
+		
+		System.out.println("Sueldo Final: " + sueldo);
+		
+		
 	}
 
 }

@@ -3,7 +3,8 @@ package deberes;
 import java.util.Scanner;
 
 public class CompararNúmeros {
-
+/*Dados dos números verificar cual es mayor (considerar la igualdad)*/
+	
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 		int numero1;
@@ -23,11 +24,12 @@ public class CompararNúmeros {
 			System.out.println("El segundo numero es mayor: " + numero2);
 			
 		}
+		teclado.close();
 		/*if(numero2>numero1) {
 			System.out.println("El segundo numero es mayor: ");
 		}
 		if(numero1==numero2) {
-			System.out.println("No me engañas, has metido el mismo número: ");
+			System.out.println("No me engañas, has Introducido el mismo número: ");
 		}*/
 	}
 }
