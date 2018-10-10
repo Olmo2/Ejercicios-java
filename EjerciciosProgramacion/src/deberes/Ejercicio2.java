@@ -18,10 +18,10 @@ public class Ejercicio2 {
 		System.out.println("Valor de venta 3: ");
 		comision3 = teclado.nextFloat();
 		//sueldo base 1200 euros
-		System.out.printf("Comisión sobre venta 1: " + "%.2f %n", comision1*0.01);
-		System.out.printf("Comisión sobre venta 2: " + "%.2f %n", comision2*0.01);
-		System.out.printf("Comisión sobre venta 3: " + "%.2f %n", comision3*0.01);
-		System.out.printf("Sueldo Final: " + "%.2f %n", comision1*0.01 + comision2*0.01 + comision3*0.01 +1200  );
+		System.out.printf("Comisión sobre venta 1: " + "%.2f %n", comision1*0.1);
+		System.out.printf("Comisión sobre venta 2: " + "%.2f %n", comision2*0.1);
+		System.out.printf("Comisión sobre venta 3: " + "%.2f %n", comision3*0.1);
+		System.out.printf("Sueldo Final: " + "%.2f %n", comision1*0.1 + comision2*0.1 + comision3*0.1 +1200  );
 	teclado.close();
 	}
 
