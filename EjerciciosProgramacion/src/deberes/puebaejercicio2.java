@@ -33,6 +33,7 @@ public class puebaejercicio2 {
 		sueldo += comision;
 		
 		System.out.println("Sueldo Final: " + sueldo);
+		teclado.close();
 		
 		
 	}
