@@ -13,7 +13,7 @@ public class CalculoIVA {
 		System.out.println("Valor del producto");
 		precio = teclado.nextFloat();
 		
-		System.out.println("Tipo de I.V.A");
+		System.out.println("Tipo de I.V.A: 4, 7 o 16");
 		factor = teclado.nextInt();
 		
 		if(factor == 4) {

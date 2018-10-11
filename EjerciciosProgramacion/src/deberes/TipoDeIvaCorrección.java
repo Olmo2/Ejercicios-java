@@ -20,6 +20,7 @@ public class TipoDeIvaCorrección {
 			} else {
 				if (tipoIVA == 2) {
 					iva = 0.21f;
+					
 				} else {
 					System.out.println("Introduce un valor válido");
 				}
@@ -29,6 +30,8 @@ public class TipoDeIvaCorrección {
 		if (iva != 0) {
 			double totalIVA = precio * iva;
 			double total = precio + totalIVA;
+			System.out.printf("IVA Aplicado: " + "%.2f %n" ,  totalIVA);
+			System.out.printf("PVP: " + "%.2f %n" , total);
 
 		}
 
