@@ -12,7 +12,7 @@ public class DeterminacionDeParidad {
 		Z = teclado.nextInt();
 		
 		
-		 if (Z%2 == 0) {
+		 if (Z % 2 == 0) {
 			 System.out.println(Z + " es Par ");
 		 }
 		 else {

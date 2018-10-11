@@ -15,7 +15,7 @@ public class DeterminarDivisibilidad {
 		System.out.println("Introduce el Segundo Número: ");
 		Y = teclado.nextInt();
 		
-		if(X%Y==0) {
+		if(X % Y==0) {
 			System.out.println(X + " Es Divisible entre " + Y);
 		}
 		else {
