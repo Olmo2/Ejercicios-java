@@ -29,5 +29,6 @@ public class EjercicioExamen1Bucle {
 			}
 			System.out.println();
 		}
+		teclado.close();
 	}
 }

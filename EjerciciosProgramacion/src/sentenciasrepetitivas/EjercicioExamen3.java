@@ -23,7 +23,9 @@ public class EjercicioExamen3 {
 				} while(numero>=1);
 			
 			}
+		teclado.close();
 		}
+	
 
 	}
 
