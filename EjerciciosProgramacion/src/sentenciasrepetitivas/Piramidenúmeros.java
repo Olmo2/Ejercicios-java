@@ -14,23 +14,22 @@ public class Piramidenúmeros {
 
 			}
 			for (int t = 0; t < digitos; t++) {
-				System.out.print(n);
 				
-				n = n % 10 +1;
+				
 			
-//				if (t >= digitos / 2 || ) {
-//		
-//					n = n % 10 - 1 ;
-//				} else {
-//					n = n % 10 + 1;
-//				}
+				if (t >= digitos / 2  ) {
+		
+					System.out.print(n--%10);
+				} else if (t <= digitos / 2  )
+					System.out.print(n++%10);
+				}
 					
-			}
+			
 			
 				System.out.println();
 
 			}
 
 		}
-	
 }
+
