@@ -14,11 +14,9 @@ public class Piramidenúmeros {
 
 			}
 			for (int t = 0; t < digitos; t++) {
-				
-				
 			
 				if (t >= digitos / 2  ) {
-		
+	
 					System.out.print(n--%10);
 				} else if (t <= digitos / 2  )
 					System.out.print(n++%10);
