@@ -26,9 +26,9 @@ public class DibujosConAsteriscos {
 		for (int i = 0; i < f; i++) {
 			for (int j = 0; j < c; j++) {
 				if ((j % 2 != 0 && i % 2 == 0) || (j % 2 == 0 && i % 2 != 0)) {
-					System.out.print("+++");
+					System.out.print("+");
 				} else {
-					System.out.print("   ");
+					System.out.print(" ");
 				}
 
 			}
@@ -43,9 +43,9 @@ public class DibujosConAsteriscos {
 			for (int x = 0; x < 3; x++) {
 				for (int j = 0; j < c; j++) {
 					if ((j % 2 != 0 && i % 2 == 0) || (j % 2 == 0 && i % 2 != 0)) {
-						System.out.print("+");
+						System.out.print("***");
 					} else {
-						System.out.print(" ");
+						System.out.print("   ");
 					}
 
 				}
@@ -54,10 +54,29 @@ public class DibujosConAsteriscos {
 			}
 		}
 	}
-
+	
+	
+	static void tableropro(int f, int c, int l) {
+		int ctxt = c * l;
+		int ftxt = f * l;
+		for(int i = 0; i< ftxt ; i++) {
+			for(int j = 0; j < ctxt; j++) {
+				int ctab = j / l;
+				int ftab = i / l;
+				if ((ftab % 2 != 0 && ctab % 2 == 0) || (ftab % 2 == 0 && ctab % 2 != 0)) {
+					System.out.print("*");
+				} else {
+					System.out.print(" ");
+				}
+			}
+				System.out.println();
+			
+			
+		}
+	}
 	public static void main(String[] args) {
 
-		mosaico(8, 8);
+		tableropro(8, 8, 4);
 
 	}
 
