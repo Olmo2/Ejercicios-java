@@ -17,7 +17,7 @@ public class Ejercicio2 {
 
 		int[] vector = new int[n];
 		Random r = new Random();
-		long t0 = System.currentTimeMillis();
+		long t0 = System.nanoTime();
 		for (int i = 0; i < n; i++) {
 			int valor;
 			do {
@@ -27,9 +27,28 @@ public class Ejercicio2 {
 
 			vector[i] = valor;
 		}
-		long t1 = System.currentTimeMillis();
+		long t1 = System.nanoTime();
 		delorean(t1 - t0);
 		
+		
+		long t2 = System.nanoTime();
+		int numeromenor = vector[0];
+		int numeromayor = vector[0];
+		for(int i = 1; i < vector.length; i++) {
+			if(numeromenor > vector[i]) 
+				numeromenor = vector[i];
+			if(numeromayor < vector[i]) 
+				numeromayor = vector[i];
+		}
+		
+	
+		long t3 = System.nanoTime();
+		
+		
+		System.out.println("El mayor número es: " + numeromayor);
+		System.out.println("El menor número es: " + numeromenor);
+		System.out.println("La difenrencia es: " + (numeromayor - numeromenor));
+		delorean(t3 - t2);
 //		for (int i = 0; i < n; i++) {
 //			System.out.print(vector [i] + " ");
 //		}
@@ -46,11 +65,15 @@ public class Ejercicio2 {
 	}
 	
 	static void delorean(long t) {
-		long m = t /60000;
-		t = t % 60000;
-		long s = t /1000;
-		t = t % 1000;
-		System.out.println(m + "m " + s + "s " + t + "ms");
-	}
+			long m = t /60000000000L;
+			t = t % 60000000000L;
+			long s = t /1000000000L;
+			t = t % 1000000000L;
+			System.out.println(m + "m " + s + "s " + t + "ns");
+		}
+	
+
+	
+	
 	
 }
